@@ -1,8 +1,9 @@
 version: '3'
 services:
-  aws-cli:
-    image: aktechthoughts/aws-cli
+  jenkins_web:
+    image: aktechthoughts/jenkins_web
     build: .
+    ports: 
+     - 8080:8080
     volumes:
-     - /home/ubuntu/.aws:/root/.aws
-     - /home/ubuntu/data:/app/data
+     - /home/ubuntu/jenkins:/home/jenkins
