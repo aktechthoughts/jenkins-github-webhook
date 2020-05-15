@@ -6,4 +6,4 @@ services:
     ports: 
      - 8080:8080
     volumes:
-     - /home/ubuntu/jenkins:/home/jenkins
+     - /home/ubuntu/jenkins:/var/jenkins_home
